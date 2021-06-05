@@ -1,0 +1,46 @@
+{
+  "version": "0.0.0",
+  "name": "alpha_no_1",
+  "main": "main.js",
+  "homepage": "./",
+  "build": {
+    "extends": null,
+    "appId": "com.electron.electron-with-vite-vue",
+    "directories": {
+      "output": "dist",
+      "buildResources": "public"
+    },
+    "target": "zip",
+    "files": [
+      "*.js",
+      "dist",
+      "node_modules"
+    ]
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "electron:start": "electron .",
+    "electron": "electron . --trace-warnings",
+    "start": "nf start -p 3000",
+    "electron-start": "node src/start-vue",
+    "vue-start": "cross-env BROWSER=none vite",
+    "pack": "electron-builder --dir",
+    "bb": "electron-builder ",
+    "dist": "npm run build && electron-builder",
+    "postinstall": "install-app-deps"
+  },
+  "dependencies": {
+    "cross-spawn": "^7.0.3",
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.3",
+    "@vue/compiler-sfc": "^3.0.5",
+    "cross-env": "^7.0.3",
+    "electron": "^13.1.0",
+    "electron-builder": "^22.10.5",
+    "vite": "^2.3.5"
+  }
+}
