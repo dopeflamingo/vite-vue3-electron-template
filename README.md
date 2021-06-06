@@ -1,2 +1,2 @@
-# vite-vue-electron-template
-Vite with vue, electron template
+# vite-vue3-electron-template
+Vite with vue3, electron template
